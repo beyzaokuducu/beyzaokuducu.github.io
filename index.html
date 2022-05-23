@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>..:: Project Name ::..</title>
+
+    <!--  Bootstrap CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section-->
+    <div id="header-section">
+      <div class="header-top">
+        <div class="container">
+          <p>Lorem ipsum dolor sit.</p>
+          <p>info@info.com.tr</p>
+          <p>+90 533 33 1121</p>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <!-- Logo Section-->
+          <span class="logo">
+            <img
+              class="logo-image"
+              src="images/logo.png"
+            />
+          </span>
+
+          <!-- Menu Section-->
+          <span class="menu-section">
+            <ul>
+              <li>Home</li>
+              <li id="about-menu">
+                About
+
+                <ul id="about-subMenu">
+                  <li>Who we are?</li>
+                  <li>Our Team</li>
+                  <li>Consultation</li>
+                  <li>Lorem, ipsum .</li>
+                  <li>Lorem, dolor.</li>
+                </ul>
+              </li>
+
+              <li
+                id="about-menu"
+                onmouseover="servicesShow()"
+              >
+                Services
+                <ul
+                  onmouseleave="servicesSubMenuHide()"
+                  id="services-subMenu"
+                >
+                  <li>Who we are?</li>
+                  <li>Our Team</li>
+                  <li>Consultation</li>
+                  <li>Lorem, ipsum .</li>
+                  <li>Lorem, dolor.</li>
+                  <li>Ipsum dolor.</li>
+                  <li>Consultation</li>
+                </ul>
+              </li>
+              <li>Blog</li>
+              <li>Our Team</li>
+              <li id="contact">Contact</li>
+            </ul>
+            <span id="getInTouch">Get In Touch</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Carousel-->
+    <div id="slider-section">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/free-photo/executives-working-together-project_1098-1333.jpg?t=st=1653204591~exp=1653205191~hmac=fbebd56e601d71c0b039e7c958d37b47bff2e3b0478deecc3f62f0e1bd934610&w=1380"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Business Technology Consulting</h5>
+              <p>Business Technology Consulting</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/double-exposure-many-business-people_31965-2162.jpg?w=1380"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CONSULTATION</h5>
+              <p>Business Technology Consulting</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/businesspeople-working-as-team-with-laptop_1098-1748.jpg?t=st=1653204650~exp=1653205250~hmac=cea6c5429ae8926ef8b320a9bc4625d3230f5dbfeb99ba6485931c358c9213c7&w=1380"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Business Technology Consulting</h5>
+              <p>Business Technology Consulting</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="contact-section">
+      <div class="container">
+        <span id="contactBox">
+          <span id="closeContact">X</span>
+          <span><strong>Adres:</strong> Bağbaşı Mah., Sahir Kurutluoğlu Cad., No:100, Kırşehir Merkez, Kırşehir,
+            Türkiye</span><br>
+          <iframe
+            id="map"
+            src="https://api-maps.yandex.com.tr/frame/v1/-/CCUJEOrKDA?lang=tr_TR"
+            title="Yandex Haritalar"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </span>
+      </div>
+    </div>
+
+    <div id="video-section">
+      <div class="container">
+        <span id="videoBox">
+          <span id="closeWindow">X</span>
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/tRO_TxWD33A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </span>
+      </div>
+    </div>
+
+    <!-- Jquery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
